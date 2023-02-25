@@ -1,0 +1,5 @@
+terraform.*
+env
+.terraform*
+__pycha
+__pycache__

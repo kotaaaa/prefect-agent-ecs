@@ -1,0 +1,54 @@
+###
+### A complete description of a Prefect Deployment for flow 'log-flow'
+###
+name: log-agent-ecs
+description: null
+version: 107902bd55df011354148f12f810e1eb
+# The work queue that will handle this deployment's runs
+work_queue_name: test-queue
+work_pool_name: null
+tags: []
+parameters:
+  name: Yoshida Masataka
+schedule: null
+is_schedule_active: null
+infra_overrides: {}
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command: null
+  stream_output: true
+  working_dir: null
+  block_type_slug: process
+  _block_type_slug: process
+
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: log-flow
+manifest_path: null
+storage:
+  bucket_path: bucket-full-of-sunshine-prefect/ecs-agent-bucket
+  aws_access_key_id: "**********"
+  aws_secret_access_key: "**********"
+  _block_document_id: 73dccad8-e5e5-4ccd-96da-3fd1f69f77b9
+  _block_document_name: ecs-agent-bucket
+  _is_anonymous: false
+  block_type_slug: s3
+  _block_type_slug: s3
+path: ""
+entrypoint: log_flow.py:log_flow
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties:
+    name:
+      title: name
+      position: 0
+      type: string
+  required:
+    - name
+  definitions: null
+timestamp: "2023-02-19T14:20:56.705513+00:00"

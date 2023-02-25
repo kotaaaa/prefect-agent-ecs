@@ -1,0 +1,7 @@
+black==23.1.0
+prefect==2.7.11
+sqlalchemy
+pandas==1.5.3
+s3fs
+pytest
+prefect-dask
