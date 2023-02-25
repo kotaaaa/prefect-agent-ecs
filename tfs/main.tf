@@ -11,7 +11,7 @@ terraform {
 data "aws_region" "current" {}
 
 resource "aws_secretsmanager_secret" "prefect_api_key" {
-  name = "prefects-api-key-${var.name}"
+  name = "prefect-api-key-${var.name}"
 }
 
 resource "aws_secretsmanager_secret_version" "prefect_api_key_version" {
